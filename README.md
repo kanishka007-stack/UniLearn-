@@ -1,21 +1,154 @@
-<<<<<<< HEAD
-# React + Vite
+# UniLearn 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack Learning Management System (LMS) built using React, Node.js, Express, MySQL, JWT Authentication, and Cloudinary. The platform enables students to enroll in courses, track progress, attempt quizzes, access learning resources, and earn certificates, while administrators can manage courses, curriculum, quizzes, and user activity through a dedicated dashboard.
 
-Currently, two official plugins are available:
+## 🌐 Live Access
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### User Portal
 
-## React Compiler
+```text
+http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Admin Dashboard
 
-## Expanding the ESLint configuration
+```text
+http://localhost:5173/admin-dashboard
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# UniLearn-
-Modern LMS platform with role-based authentication, course creation, enrollment management, quizzes, progress analytics, certificates, and admin controls. Built using React, Express.js, MySQL, Redux Toolkit, Cloudinary, and JWT authentication.
->>>>>>> 35a3ba761b7cc033bb15f25322aa51d9216ad008
+## 🚀 Features
+
+### Student Features
+
+* User Registration & Login
+* Secure JWT Authentication
+* Browse and Enroll in Courses
+* Personalized Learning Dashboard
+* Course Progress Tracking
+* Online Quizzes
+* Downloadable Notes & Resources
+* Certificate Generation
+* User Profile Management
+
+### Admin Features
+
+* Secure Admin Login
+* Course Management
+* Curriculum Management
+* Quiz Management
+* Dashboard Analytics
+* Enrollment Monitoring
+* Certificate Administration
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* React Router DOM
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MySQL
+
+### Authentication
+
+* JWT Authentication
+* Protected Routes
+* Role-Based Access Control
+
+### Additional Tools
+
+* Cloudinary
+* Multer
+
+## 📂 Project Structure
+
+```bash
+UniLearn/
+├── backend/
+├── public/
+├── src/
+│   ├── admin/
+│   ├── components/
+│   ├── pages/
+│   └── api/
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/kanishka007-stack/UniLearn-.git
+cd UniLearn-
+```
+
+### Install Frontend Dependencies
+
+```bash
+npm install
+npm run dev
+```
+
+### Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside the backend folder:
+
+```env
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+
+JWT_SECRET=
+
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Home Page
+* Student Dashboard
+* Course Details
+* Admin Dashboard
+* Quiz Management
+
+## 🎯 Future Enhancements
+
+* AI Learning Assistant
+* Live Classes
+* Discussion Forums
+* Payment Gateway Integration
+* Mobile Application
+* Advanced Learning Analytics
+
+## 👨‍💻 Developer
+
+**Kanishka Agrawal**
+
+GitHub: https://github.com/kanishka007-stack
+
+⭐ Star this repository if you found it useful.
+
