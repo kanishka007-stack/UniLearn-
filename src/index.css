@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --chart-tooltip-bg: #ffffff;
+    --chart-tooltip-text: #111827;
+    --chart-tooltip-border: #e5e7eb;
+  }
+
+  .dark {
+    --chart-tooltip-bg: #111827;
+    --chart-tooltip-text: #e5e7eb;
+    --chart-tooltip-border: #374151;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    transition:
+      background-color 300ms ease,
+      color 300ms ease;
+  }
+
+  body,
+  nav,
+  section,
+  article,
+  aside,
+  div,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    transition-property: background-color, border-color, color, box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  .dark body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+}
+
+@layer utilities {
+  .dark .bg-white,
+  .dark .bg-white\/90,
+  .dark .bg-gray-50,
+  .dark .bg-gray-100,
+  .dark .bg-gray-200,
+  .dark [class*="bg-[#f5f2ee]"],
+  .dark [class*="bg-[#f8f6f2]"],
+  .dark [class*="bg-[#f8f8f8]"] {
+    background-color: #111827 !important;
+  }
+
+  .dark .bg-gray-300,
+  .dark [class*="bg-[#f3f0ea]"],
+  .dark [class*="bg-[#f5f5f5]"],
+  .dark [class*="bg-[#c9c9c9]"],
+  .dark [class*="bg-[#dcdcdc]"] {
+    background-color: #1f2937 !important;
+  }
+
+  .dark .hover\:bg-gray-100:hover,
+  .dark .hover\:bg-gray-200:hover,
+  .dark .hover\:bg-gray-300:hover,
+  .dark .hover\:bg-white:hover {
+    background-color: #374151 !important;
+  }
+
+  .dark .text-black,
+  .dark [class*="text-[#111]"],
+  .dark [class*="text-[#1f1f1f]"],
+  .dark [class*="text-[#2b2b2b]"],
+  .dark .text-gray-900 {
+    color: #f9fafb !important;
+  }
+
+  .dark .text-gray-700,
+  .dark .text-gray-600,
+  .dark .text-gray-500,
+  .dark .text-gray-400 {
+    color: #d1d5db !important;
+  }
+
+  .dark .border,
+  .dark .border-gray-200,
+  .dark .border-gray-300,
+  .dark .border-gray-500,
+  .dark .border-white\/20 {
+    border-color: #374151 !important;
+  }
+
+  .dark input,
+  .dark textarea,
+  .dark select {
+    background-color: #1f2937;
+    color: #f9fafb;
+    border-color: #374151;
+  }
+
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: #9ca3af;
+  }
+
+  .dark .shadow,
+  .dark .shadow-sm,
+  .dark .shadow-md,
+  .dark .shadow-lg,
+  .dark .shadow-xl,
+  .dark .shadow-2xl {
+    box-shadow: 0 22px 50px rgb(0 0 0 / 0.35) !important;
+  }
+
+  .dark .recharts-cartesian-axis-tick-value,
+  .dark .recharts-text {
+    fill: #d1d5db;
+  }
+}
