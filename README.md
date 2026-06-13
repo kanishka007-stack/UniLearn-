@@ -89,8 +89,8 @@ UniLearn/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/kanishka007-stack/UniLearn-.git
-cd UniLearn-
+git clone https://github.com/kanishka007-stack/UniLearn.git
+cd UniLearn
 ```
 
 ### Install Frontend Dependencies
